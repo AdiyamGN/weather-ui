@@ -1,0 +1,234 @@
+/*@import url('https://fonts.googleapis.com/css?family=Mirza:400,700|Proza+Libre:400,500,700');*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+// --------------------- Variable Definition --------------------------- //
+
+$white:       #FFFFFF;
+$primary:     #2b3133;
+$secondary:   #6f7f86;
+$highlight_1: #fd7473; // Red
+$highlight_2: #fec951; // Yellow
+$highlight_3: #47b8e0; // Blue
+$highlight_4: #9f68d0; // Purple
+$background:  #F3F5F6;
+$bottom_1:    #556E7D;
+$bottom_2:    #040404;
+
+
+// --------------------- General Styles -------------------------------- //
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #F3F5F6;
+}
+
+a {
+	text-decoration: none;
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.button {
+  border: none;
+	outline: none;
+	color: #fff;
+	text-align: center;
+}
+
+.button_secondary {
+  background-color: $highlight_4;
+  border-radius: 10em;
+}
+
+
+/* ---------------------------- Banner Styles ----------------------------------- */
+
+.home-wrap {
+	margin: 0 auto;
+	margin-top: 60px;
+	width: 1020px;
+	max-width: 100%;
+	.top-banner {                                     /* top banner   */
+		background: url(../images/banner-background.jpg);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 470px;
+		text-align: center;
+		border-radius: 10px 10px 0 0;
+		color: $white;
+		position: relative;
+		.logo {
+			float: left;
+			padding: 0.2em 0 0 1.25em;
+
+			span {
+				color: #A7C4ED;
+			}
+		}
+		.location {
+			margin: 0 auto;
+			margin-top: 6em;
+			img {
+				width: 80px;
+			}
+			#city {
+				margin: 0 0 0.5em;
+				font-size: 2em;
+				font-weight: 600;
+				z-index: 2;
+			}
+			#time {
+				margin: 0 0 0.5em;
+				font-size: 1.3em;
+				z-index: 2;
+				font-weight: 700;
+			}
+		}
+
+		.info {
+			float: left;
+			bottom: 0.9em;
+			left: 1.85em;
+			color: white;
+			position: absolute;
+
+			a {
+				text-decoration: none;
+				color: $secondary;
+				font-size: 0.7em;
+				text-transform: uppercase;
+				margin-right: 3.5em;
+				letter-spacing: 1px;
+				font-weight: 600;
+
+				&:first-child {
+					color: $white;
+				}
+
+				i {
+					padding-right: .3em;
+					font-size: 1em;
+				}
+			}
+
+		}
+
+	} /* top banner ends*/
+
+	.bottom-banner {
+		height: 170px;
+		background: #ffd89b; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, rgba(55,126,225,0.4), rgba(25,84,123,0.7)); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, rgba(55,126,225,0.4), rgba(25,84,123,0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0 0 10px 10px;
+
+		.border {
+			height: 5px;
+			border: 0;
+			top: 10px;
+			background-repeat: no-repeat;
+			background-image: 
+				linear-gradient(
+		      to right,
+		      $highlight_2,
+		      $highlight_2 25%,
+		      $highlight_4 25%,
+		      $highlight_4 55%,
+		      $highlight_3 55%,
+		      $highlight_3 75%
+				);
+			-webkit-background-size: 50% 100%;
+			-moz-background-size: 50% 100%;
+			background-size: 50% 100%;
+			
+		}
+
+		.weather-block {
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				li {
+					float: left;
+					padding: 0;
+					margin: 0;
+					margin-top: 0.6em;
+					width: 11.4%;
+					height: 165px;
+					border-right: 1px solid #F3F5F6;
+					color: $white;
+
+					&:first-child {
+						width: 31%;
+						padding-top: .9em;
+						margin-top: 0;
+					}
+
+					&:last-child {
+						border-right: none;
+					}
+
+					#day-0-temp {
+						float: left;
+						padding: 0.1em 0 0 0.5em;
+						margin: 0;
+						font-size: 4.5em;
+						font-weight: 600;
+					}
+
+					#date-0 {
+						float: left;
+				    padding: 0.4em 1em;
+    				margin: 0 0 0 3.4em;
+				    font-size: 0.75em;
+				    font-weight: 400;
+				    text-transform: uppercase;
+					}
+
+					.today-weather-icon {
+						float: right;
+						margin-right: 4.1em;
+					}
+
+					.day {
+						text-align: center;
+						text-transform: uppercase;
+						font-size: 0.75em;
+					}
+
+					.weathericon {
+						fill: $white;
+						margin: 0 0 0 0.5em;;
+						width: 100px;
+						height: 60px;
+					}
+
+					.temp {
+						text-align: center;
+						font-size: 1.2em;
+						padding-top: 0.5em;
+						margin: 0
+					}
+
+				}
+			}
+		}
+
+	}
+		
+}

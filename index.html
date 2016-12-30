@@ -4,11 +4,82 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title</title>
+	<title>Weather UI</title>
 	<!-- Normalize CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<!--font-awesome -->
+	<script src="https://use.fontawesome.com/7da33bde7e.js"></script>
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
-	
+	<div class="home-wrap">
+		<div class="top-banner cf">
+
+			<h2 class="logo">Wea<span>ther UI</span></h2>
+
+			<div class="location">
+				<img src="images/logo.png" alt="Location logo">
+				<h1 id="city">Washington D.C.</h1>
+				<p id="time">9:30 P.M</p>
+			</div>
+
+			<div class="info">
+				<a href="#"><i class="fa fa-sun-o" aria-hidden="true"></i>Weather</a>
+				<a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>News &amp; Events</a>
+				<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Attractions (30)</a>
+			</div>
+
+		</div>
+
+		<div class="bottom-banner">
+
+			<div class="border"></div>
+
+			<div class="weather-block">
+				<ul>
+					<li class="day-0">
+						<h3 id="day-0-temp">83&deg;</h3>
+						<img src="images/sun.svg" alt="sun logo" class="today-weather-icon">
+						<p id="date-0" class="button button_secondary">Thursday 29</p>
+
+					</li>
+					<li class="day-1">
+						<p id="day-1" class="day">Friday</p>
+						<img src="images/weathericons/10.svg" class="weathericon">
+						<p id="day-1-temp" class="temp">60&deg;</p>
+					</li>
+					<li class="day-2">
+						<p id="day-2" class="day">Saturday</p>
+						<img src="images/weathericons/12.svg" class="weathericon">
+						<p id="day-2-temp" class="temp">80&deg;</p>
+					</li>
+					<li class="day-3">
+						<p id="day-3" class="day">Sunday</p>
+						<img src="images/weathericons/33.svg" class="weathericon">
+						<p id="day-3-temp" class="temp">74&deg;</p>
+					</li>
+					<li class="day-4">
+						<p id="day-4" class="day">Monday</p>
+						<img src="images/weathericons/41.svg" class="weathericon">
+						<p id="day-4-temp" class="temp">57&deg;</p>
+					</li>
+					<li class="day-5">
+						<p id="day-5" class="day">Tuesday</p>
+						<img src="images/weathericons/27.svg" class="weathericon">
+						<p id="day-5-temp" class="temp">60&deg;</p>
+					</li>
+					<li class="day-6">
+						<p id="day-6" class="day">Wednesday</p>
+						<img src="images/weathericons/19.svg" class="weathericon">
+						<p id="day-6-temp" class="temp">47&deg;</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		
+	</div>
+
 </body>
 </html>
