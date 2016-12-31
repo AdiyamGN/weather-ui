@@ -53,6 +53,11 @@ a {
   border-radius: 10em;
 }
 
+.button_small {
+	background-color: $highlight_4;
+	border-radius: 2em;
+}
+
 
 /* ---------------------------- Banner Styles ----------------------------------- */
 
@@ -79,6 +84,54 @@ a {
 				color: #A7C4ED;
 			}
 		}
+
+		.switch {
+			float: right;
+			margin-right: 1.25em;
+			font-family: 'Open Sans', sans-serif;
+
+			input {
+				opacity: 0;
+			}
+			.switch-btn {
+				width: 80px;
+				height: 40px;
+				background: $highlight_3;
+				position: relative;
+				cursor: pointer;
+				border-radius: 20px;
+				box-shadow: inset 0 3px 10px rgba(0,0,0,0.3);
+				-webkit-box-shadow: inset 0 3px 10px rgba(0,0,0,0.3);
+				-moz-box-shadow: inset 0 3px 10px rgba(0,0,0,0.3);
+			}
+
+			.switch-btn:before {
+				content: '';
+				text-align: center;
+				position: absolute;
+				height: 36px;
+				width: 36px;
+				line-height: 36px;
+				background: $highlight_4;
+				left: 2px;
+				top: 2px;
+				border-radius: 50%;
+				transition: all 0.3s ease-in-out;
+				box-shadow: 0 8px 6px -4px rgba(0,0,0,0.25);
+				-webkit-box-shadow: 0 8px 6px -4px rgba(0,0,0,0.25);
+				-moz-box-shadow: 0 8px 6px -4px rgba(0,0,0,0.25);
+			}
+
+			input[type=checkbox]:checked + .switch-btn {
+				background: #A6C3EC;
+			}
+
+			input[type=checkbox]:checked + .switch-btn:before {
+				left: 42px;
+			}
+
+		}
+
 		.location {
 			margin: 0 auto;
 			margin-top: 6em;
@@ -90,10 +143,15 @@ a {
 				font-size: 2em;
 				font-weight: 600;
 				z-index: 2;
+
+				.location {
+					padding: 0;
+					margin: 0;
+				}
 			}
 			#time {
 				margin: 0 0 0.5em;
-				font-size: 1.3em;
+				font-size: 2.1em;
 				z-index: 2;
 				font-weight: 700;
 			}

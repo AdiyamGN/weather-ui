@@ -18,10 +18,15 @@
 
 			<h2 class="logo">Wea<span>ther UI</span></h2>
 
+			<label class="switch">
+				<input type="checkbox" />
+				<div class="switch-btn"></div>
+			</label>
+
 			<div class="location">
 				<img src="images/logo.png" alt="Location logo">
-				<h1 id="city">Washington D.C.</h1>
-				<p id="time">9:30 P.M</p>
+				<h1 id="city"></h1>
+				<p id="time"></p>
 			</div>
 
 			<div class="info">
@@ -39,40 +44,42 @@
 			<div class="weather-block">
 				<ul>
 					<li class="day-0">
-						<h3 id="day-0-temp">83&deg;</h3>
-						<img src="images/sun.svg" alt="sun logo" class="today-weather-icon">
-						<p id="date-0" class="button button_secondary">Thursday 29</p>
+						<h3 id="day-0-temp"></h3>
+						<div class="climate-bg">
+							
+						</div>
+						<p id="date-0" class="button button_secondary"></p>
 
 					</li>
 					<li class="day-1">
-						<p id="day-1" class="day">Friday</p>
-						<img src="images/weathericons/10.svg" class="weathericon">
-						<p id="day-1-temp" class="temp">60&deg;</p>
+						<p id="day-1" class="day"></p>
+						<div class="image-1"></div>
+						<p id="day-1-temp" class="temp"></p>
 					</li>
 					<li class="day-2">
-						<p id="day-2" class="day">Saturday</p>
-						<img src="images/weathericons/12.svg" class="weathericon">
-						<p id="day-2-temp" class="temp">80&deg;</p>
+						<p id="day-2" class="day"></p>
+						<div class="image-2"></div>
+						<p id="day-2-temp" class="temp"></p>
 					</li>
 					<li class="day-3">
-						<p id="day-3" class="day">Sunday</p>
-						<img src="images/weathericons/33.svg" class="weathericon">
-						<p id="day-3-temp" class="temp">74&deg;</p>
+						<p id="day-3" class="day"></p>
+						<div class="image-3"></div>
+						<p id="day-3-temp" class="temp"></p>
 					</li>
 					<li class="day-4">
-						<p id="day-4" class="day">Monday</p>
-						<img src="images/weathericons/41.svg" class="weathericon">
-						<p id="day-4-temp" class="temp">57&deg;</p>
+						<p id="day-4" class="day"></p>
+						<div class="image-4"></div>
+						<p id="day-4-temp" class="temp"></p>
 					</li>
 					<li class="day-5">
-						<p id="day-5" class="day">Tuesday</p>
-						<img src="images/weathericons/27.svg" class="weathericon">
-						<p id="day-5-temp" class="temp">60&deg;</p>
+						<p id="day-5" class="day"></p>
+						<div class="image-5"></div>
+						<p id="day-5-temp" class="temp"></p>
 					</li>
 					<li class="day-6">
-						<p id="day-6" class="day">Wednesday</p>
-						<img src="images/weathericons/19.svg" class="weathericon">
-						<p id="day-6-temp" class="temp">47&deg;</p>
+						<p id="day-6" class="day"></p>
+						<div class="image-6"></div>
+						<p id="day-6-temp" class="temp"></p>
 					</li>
 				</ul>
 			</div>
@@ -81,5 +88,8 @@
 		
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+	<script src="js/weather.js"></script>
 </body>
 </html>
